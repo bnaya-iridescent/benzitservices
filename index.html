@@ -4,208 +4,368 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Benz IT Services</title>
+    <!-- Bootstrap CSS -->
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Optional custom CSS for further customization -->
     <style>
-        .App-header {
-            background-color: #282c34;
-            min-height: 100vh;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            font-size: calc(10px + 2vmin);
-            color: white;
+        /*body {
+            padding-top: 10px; /* Offset for sticky navbar 
+        }*/
+        .navbar-brand img {
+            height: 120px; /* Adjust logo size */
         }
-        .App-logo {
-            height: 10vmin;
-            pointer-events: none;
+        .header {
+            background: url('your-header-bg.jpg') no-repeat center center; /* Add a background image */
+            background-size: cover;
+            color: #fff;
+            padding:50px 0;
         }
-        .navbar {
-            margin-bottom: 20px;
+        .services-section, .about-section, .contact-section {
+            padding: 50px 0;
         }
-        .nav-links a {
-            color: #61dafb;
-            margin-right: 20px;
-            text-decoration: none;
+        .service-salesforce {
+            background-color: #e3f2fd; /* Light blue */
         }
-        h2 {
-            color: #61dafb;
+        .service-web {
+            background-color: #e1bee7; /* Light purple */
         }
-        .service-category h3 {
-            color: #adb5bd;
+        .service-it-support {
+            background-color: #c8e6c9; /* Light green */
         }
-        .service-category ul {
-            list-style-type: none;
+        .service-it-training {
+            background-color: #fff9c4; /* Light yellow */
         }
-        .service-category ul li:before {
-            content: "✓";
-            color: #61dafb;
-            margin-right: 5px;
+        .service-software {
+            background-color: #ffccbc; /* Light red */
         }
-        .contact-section form {
-            background: #333;
-            padding: 20px;
-            border-radius: 8px;
+        .service-other {
+            background-color: #b3e5fc; /* Another shade of light blue */
         }
-        .contact-section input, .contact-section select, .contact-section button {
-            margin-top: 10px;
-        }
+        
     </style>
 </head>
 <body>
-<div class="App">
-      <header class="App-header">
-      
-        <nav class="navbar">
-        <div><img src="benzLogo.jpg" class="App-logo" alt="Benz IT Services Logo" /></div>
-          <div class="nav-links">
-            <a href="#about">About</a>
-            <a href="#services">Services</a>
-            <a href="#team">Team</a>
-            <a href="#why-choose-us">Why Choose Us</a>
-            <a href="#contact">Contact</a>
-          </div>
-        </nav>
 
-        <div class="content-container">
-        <div class="about-container">
-          <section id="about">
-              <h2>About Us</h2>
-              <p>
-                Founded in November 2022, Benz IT Services is a leading IT solutions provider based in Tasmania, Australia.
-                With a passion for innovation and excellence, we specialize in a wide range of IT services, including
-                Salesforce development, web and mobile app development, IT consulting, cloud services, and software development.
-              </p>
-              <p>
-                Our team of skilled engineers, boasting more than 6 years of experience in Salesforce and software development,
-                is dedicated to delivering high-quality solutions tailored to our clients' unique needs. At Benz IT Services,
-                customer satisfaction is not just a goal; it's our top priority. We pride ourselves on providing affordable,
-                top-notch services without compromising on quality.
-              </p>
-              <p>
-                Whether you're a small business seeking to enhance your online presence or a large enterprise in need of
-                complex IT solutions, we have the expertise and dedication to meet your requirements. Join hands with Benz IT
-                Services, where innovation meets reliability, and let's shape the future of your business together.
-              </p>
-            </section>
-            </div>
-
-            <div class="services-container">
-              <section id="services">
-              <h2>Our Services</h2>
-              <div class="service-category">
-                <h3>Salesforce Development</h3>
-                <ul>
-                  <li>Custom Salesforce App Development</li>
-                  <li>Salesforce Integration and Implementation</li>
-                  <li>Salesforce Consulting and Support</li>
-                </ul>
-              </div>
-              <div class="service-category">
-                <h3>Web Development</h3>
-                <ul>
-                  <li>Responsive Website Design</li>
-                  <li>E-commerce Solutions</li>
-                  <li>CMS Development</li>
-                </ul>
-              </div>
-              <div class="service-category">
-                <h3>IT Support</h3>
-                <ul>
-                  <li>24/7 Technical Support</li>
-                  <li>Network Maintenance and Security</li>
-                  <li>Remote IT Assistance</li>
-                </ul>
-              </div>
-              <div class="service-category">
-                <h3>IT Training</h3>
-                <ul>
-                  <li>Customized IT Training Programs</li>
-                  <li>Certification Preparation Courses</li>
-                </ul>
-              </div>
-              <div class="service-category">
-                <h3>Software Development</h3>
-                <ul>
-                  <li>Bespoke Software Solutions</li>
-                  <li>Mobile App Development</li>
-                  <li>Database Design and Development</li>
-                </ul>
-              </div>
-              <div class="service-category">
-                <h3>Other Services</h3>
-                <ul>
-                  <li>Cloud Services</li>
-                  <li>IT Consulting</li>
-                </ul>
-              </div>
-            </section>
-            </div>
-
-            <div class="chooseus-container">
-            <section id="why-choose-us">
-              <h2>Why Choose Us</h2>
-              <ul>
-                <li>
-                  Over 6 years of experience in Salesforce and software
-                  development
-                </li>
-                <li>Customer satisfaction is our top priority</li>
-                <li>Affordable solutions without compromising quality</li>
-                <li>Innovative IT solutions tailored to your needs</li>
-              </ul>
-            </section>
-          </div>
-
-          <div class="contact-container">
-          <section id="contact" class="contact-section">
-            <h2>Contact Us</h2>
-            <form>
-              <label for="name">Name:</label>
-              <input type="text" id="name" name="name" required />
-
-              <label for="email">Email:</label>
-              <input type="email" id="email" name="email" required />
-
-              <label for="phone">Phone:</label>
-              <input type="tel" id="phone" name="phone" required />
-
-              <label for="service">Service Required:</label>
-              <select id="service" name="service" required>
-                <option value="" disabled selected>Select a service</option>
-                <option value="Salesforce Development">Salesforce Development</option>
-                <option value="Web Development">Web Development</option>
-                <option value="IT Support">IT Support</option>
-                <option value="IT Training">IT Training</option>
-                <option value="Software Development">Software Development</option>
-                <option value="Other Services">Other Services</option>
-              </select>
-
-              <div class="other-services" style="display:none;">
-                <label for="otherService">Specify Other Service:</label>
-                <input type="text" id="otherService" name="otherService" />
-              </div>
-
-              <button type="submit">Submit</button>
-            </form>
-          </section>
-          </div>
+<!-- Sticky Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+        <a class="navbar-brand" href="#"><img src="benzLogo.jpg" alt="Benz IT Services Logo"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+                <li class="nav-item"><a class="nav-link" href="#why-choose-us">Why Choose Us?</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+            </ul>
         </div>
-      </header>
     </div>
+</nav>
 
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.7/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <script>
-        // Example JavaScript to toggle other services input
-        $('#service').change(function() {
-            if ($(this).val() === 'Other Services') {
-                $('.other-services').show();
-            } else {
-                $('.other-services').hide();
-            }
+<!-- Header Section -->
+<header class="header text-center">
+    <div class="container">
+        <h1 class="display-4">Welcome to Benz IT Services</h1>
+        <p class="lead">Innovating the future of your IT solutions</p>
+    </div>
+</header>
+
+<!-- About Section -->
+<section id="about" class="about-section">
+    <div class="container">
+        <h2 class="text-center mb-5">About Us</h2>
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <div style="background-color: #f0f8ff; padding: 20px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+                    <p>
+                        Founded in November 2022, Benz IT Services is a leading IT solutions provider based in Tasmania, Australia.
+                        With a passion for innovation and excellence, we specialize in a wide range of IT services, including
+                        Salesforce development, web and mobile app development, IT consulting, cloud services, and software development.
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div style="background-color: #e6e6fa; padding: 20px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+                    <p>
+                        Our team of skilled engineers, boasting more than 6 years of experience in Salesforce and software development,
+                        is dedicated to delivering high-quality solutions tailored to our clients' unique needs. At Benz IT Services,
+                        customer satisfaction is not just a goal; it's our top priority. We pride ourselves on providing affordable,
+                        top-notch services without compromising on quality.
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div style="background-color: #ffe4e1; padding: 20px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+                    <p>
+                        Whether you're a small business seeking to enhance your online presence or a large enterprise in need of
+                        complex IT solutions, we have the expertise and dedication to meet your requirements. Join hands with Benz IT
+                        Services, where innovation meets reliability, and let's shape the future of your business together.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- Services Section -->
+<section id="services" class="bg-light pt-5 pb-5">
+    <div class="container">
+        <h2 class="text-center mb-4">Our Services</h2>
+        <div class="row">
+            <!-- Salesforce Development -->
+            <div class="col-md-4 mb-4">
+                <div class="card h-100 service-salesforce">
+                    <div class="card-body">
+                        <h3 class="card-title">Salesforce Development</h3>
+                        <p class="card-text">
+                            <ul>
+                                <li>Custom Salesforce App Development</li>
+                                <li>Salesforce Integration and Implementation</li>
+                                <li>Salesforce Consulting and Support</li>
+                            </ul>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!-- Web Development -->
+            <div class="col-md-4 mb-4">
+                <div class="card h-100 service-web">
+                    <div class="card-body">
+                        <h3 class="card-title">Web Development</h3>
+                        <p class="card-text">
+                            <ul>
+                                <li>Responsive Website Design</li>
+                                <li>E-commerce Solutions</li>
+                                <li>CMS Development</li>
+                            </ul>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!-- IT Support -->
+            <div class="col-md-4 mb-4">
+                <div class="card h-100 service-it-support">
+                    <div class="card-body">
+                        <h3 class="card-title">IT Support</h3>
+                        <p class="card-text">
+                            <ul>
+                                <li>24/7 Technical Support</li>
+                                <li>Network Maintenance and Security</li>
+                                <li>Remote IT Assistance</li>
+                            </ul>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!-- IT Training -->
+            <div class="col-md-4 mb-4">
+                <div class="card h-100 service-it-training">
+                    <div class="card-body">
+                        <h3 class="card-title">IT Training</h3>
+                        <p class="card-text">
+                            <ul>
+                                <li>Customized IT Training Programs</li>
+                                <li>Certification Preparation Courses</li>
+                            </ul>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Software Development -->
+            <div class="col-md-4 mb-4">
+                <div class="card h-100 service-software">
+                    <div class="card-body">
+                        <h3 class="card-title">Software Development</h3>
+                        <p class="card-text">
+                            <ul>
+                                <li>Bespoke Software Solutions</li>
+                                <li>Mobile App Development</li>
+                                <li>Database Design and Development</li>
+                            </ul>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Other Services -->
+            <div class="col-md-4 mb-4">
+                <div class="card h-100 service-other">
+                    <div class="card-body">
+                        <h3 class="card-title">Other Services</h3>
+                        <p class="card-text">
+                            <ul>
+                                <li>Cloud Services</li>
+                                <li>IT Consulting</li>
+                            </ul>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!-- More rows as needed for other service categories -->
+    </div>
+</section>
+
+<section id="why-choose-us" class="pt-5 pb-5">
+    <div class="container">
+        <div class="jumbotron bg-light text-center mb-5 border">
+            <h2 class="text-secondary">Why Choose Us</h2>
+            <p class="text-muted">Discover the reasons that set us apart.</p>
+        </div>
+
+        <div class="row align-items-center mb-4">
+            <div class="col-md-6">
+                <h3 class="mb-3">Experienced Professionals</h3>
+                <p>With over 6 years of experience in Salesforce and software development, our team brings unparalleled expertise to every project.</p>
+            </div>
+            <div class="col-md-6 text-center">
+                <i class="fas fa-users fa-5x text-primary" style="background-color: #e3f2fd; padding: 20px; border-radius: 50%;"></i>
+            </div>
+        </div>
+
+        <div class="row align-items-center mb-4" style="background-color: #f8f9fa; padding: 20px; border-radius: 10px;">
+            <div class="col-md-6 order-md-2">
+                <h3 class="mb-3">Customer-Centric Approach</h3>
+                <p>At the core of our mission is your satisfaction. We prioritize your needs and strive to exceed your expectations.</p>
+            </div>
+            <div class="col-md-6 order-md-1 text-center">
+                <i class="fas fa-heart fa-5x text-danger" style="background-color: #ffebee; padding: 20px; border-radius: 50%;"></i>
+            </div>
+        </div>
+
+        <div class="row align-items-center mb-4">
+            <div class="col-md-6">
+                <h3 class="mb-3">Cost-Effective Solutions</h3>
+                <p>We deliver high-quality, affordable solutions designed to offer the best value without compromising on quality.</p>
+            </div>
+            <div class="col-md-6 text-center">
+                <i class="fas fa-balance-scale fa-5x text-success" style="background-color: #e8f5e9; padding: 20px; border-radius: 50%;"></i>
+            </div>
+        </div>
+
+        <div class="row align-items-center" style="background-color: #f8f9fa; padding: 20px; border-radius: 10px;">
+            <div class="col-md-6 order-md-2">
+                <h3 class="mb-3">Innovation at Every Step</h3>
+                <p>Our solutions are tailored to your unique needs, ensuring innovative, forward-thinking support for your projects.</p>
+            </div>
+            <div class="col-md-6 order-md-1 text-center">
+                <i class="fas fa-lightbulb fa-5x text-warning" style="background-color: #fff3e0; padding: 20px; border-radius: 50%;"></i>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+<!-- Contact Section -->
+<section id="contact" class="pt-5 pb-5">
+    <div class="container">
+        <div class="card border-secondary mb-3">
+            <div class="card-header bg-secondary text-white text-center">
+                <h2>Contact Us</h2>
+            </div>
+            <div class="card-body text-secondary">
+                <form id="contact-form">
+                    <div class="form-group">
+                        <label for="name" class="form-label">Name:</label>
+                        <input type="text" class="form-control" id="name" name="name">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email" class="form-label">Email:</label>
+                        <input type="email" class="form-control" id="email" name="email">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone" class="form-label">Phone:</label>
+                        <input type="tel" class="form-control" id="phone" name="phone">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="service" class="form-label">Service Required:</label>
+                        <select class="form-control" id="service" name="service">
+                            <option value="" disabled selected>Select a service</option>
+                            <option value="Salesforce Development">Salesforce Development</option>
+                            <option value="Web Development">Web Development</option>
+                            <option value="IT Support">IT Support</option>
+                            <option value="IT Training">IT Training</option>
+                            <option value="Software Development">Software Development</option>
+                            <option value="Other Services">Other Services</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group other-services" style="display:none;">
+                        <label for="otherService" class="form-label">Specify Other Service:</label>
+                        <input type="text" class="form-control" id="otherService" name="otherService">
+                    </div>
+
+                    <div class="text-center">
+                        <button type="submit" class="btn btn-secondary">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Contact Form Submission Modal -->
+<div class="modal fade" id="submissionModal" tabindex="-1" role="dialog" aria-labelledby="modalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="modalLabel">Thank You!</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                Thank you for contacting us. We will get back to you as soon as possible!
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal" id="closeModalButton">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<!-- Bootstrap core JavaScript -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.7/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script>
+    $(document).ready(function() {
+        $('#contact-form').submit(function(event) {
+            event.preventDefault(); // Prevent the form from submitting via the browser.
+            $('#submissionModal').modal('show'); // Show the modal
         });
-    </script>
+
+        // Refresh the page when the 'Close' button in the modal is clicked
+        $('#closeModalButton').click(function() {
+            window.location.reload(true); // Force a reload of the page from the server
+        });
+
+        // Smooth scrolling for links with hashes
+    $('a[href*="#"]').click(function(event) {
+        var target = $(this.hash);
+        if (target.length) {
+            event.preventDefault(); // Prevent the default anchor behavior
+            $('html, body').animate({
+                scrollTop: target.offset().top - 120 // Adjust for navbar height
+            }, 1000);
+        }
+    });
+    });
+</script>
+
 </body>
 </html>
