@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Benz IT Services</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .App-header {
+            background-color: #282c34;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            font-size: calc(10px + 2vmin);
+            color: white;
+        }
+        .App-logo {
+            height: 10vmin;
+            pointer-events: none;
+        }
+        .navbar {
+            margin-bottom: 20px;
+        }
+        .nav-links a {
+            color: #61dafb;
+            margin-right: 20px;
+            text-decoration: none;
+        }
+        h2 {
+            color: #61dafb;
+        }
+        .service-category h3 {
+            color: #adb5bd;
+        }
+        .service-category ul {
+            list-style-type: none;
+        }
+        .service-category ul li:before {
+            content: "✓";
+            color: #61dafb;
+            margin-right: 5px;
+        }
+        .contact-section form {
+            background: #333;
+            padding: 20px;
+            border-radius: 8px;
+        }
+        .contact-section input, .contact-section select, .contact-section button {
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+<div class="App">
+      <header class="App-header">
+      
+        <nav class="navbar">
+        <div><img src="benzLogo.jpg" class="App-logo" alt="Benz IT Services Logo" /></div>
+          <div class="nav-links">
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#team">Team</a>
+            <a href="#why-choose-us">Why Choose Us</a>
+            <a href="#contact">Contact</a>
+          </div>
+        </nav>
+
+        <div class="content-container">
+        <div class="about-container">
+          <section id="about">
+              <h2>About Us</h2>
+              <p>
+                Founded in November 2022, Benz IT Services is a leading IT solutions provider based in Tasmania, Australia.
+                With a passion for innovation and excellence, we specialize in a wide range of IT services, including
+                Salesforce development, web and mobile app development, IT consulting, cloud services, and software development.
+              </p>
+              <p>
+                Our team of skilled engineers, boasting more than 6 years of experience in Salesforce and software development,
+                is dedicated to delivering high-quality solutions tailored to our clients' unique needs. At Benz IT Services,
+                customer satisfaction is not just a goal; it's our top priority. We pride ourselves on providing affordable,
+                top-notch services without compromising on quality.
+              </p>
+              <p>
+                Whether you're a small business seeking to enhance your online presence or a large enterprise in need of
+                complex IT solutions, we have the expertise and dedication to meet your requirements. Join hands with Benz IT
+                Services, where innovation meets reliability, and let's shape the future of your business together.
+              </p>
+            </section>
+            </div>
+
+            <div class="services-container">
+              <section id="services">
+              <h2>Our Services</h2>
+              <div class="service-category">
+                <h3>Salesforce Development</h3>
+                <ul>
+                  <li>Custom Salesforce App Development</li>
+                  <li>Salesforce Integration and Implementation</li>
+                  <li>Salesforce Consulting and Support</li>
+                </ul>
+              </div>
+              <div class="service-category">
+                <h3>Web Development</h3>
+                <ul>
+                  <li>Responsive Website Design</li>
+                  <li>E-commerce Solutions</li>
+                  <li>CMS Development</li>
+                </ul>
+              </div>
+              <div class="service-category">
+                <h3>IT Support</h3>
+                <ul>
+                  <li>24/7 Technical Support</li>
+                  <li>Network Maintenance and Security</li>
+                  <li>Remote IT Assistance</li>
+                </ul>
+              </div>
+              <div class="service-category">
+                <h3>IT Training</h3>
+                <ul>
+                  <li>Customized IT Training Programs</li>
+                  <li>Certification Preparation Courses</li>
+                </ul>
+              </div>
+              <div class="service-category">
+                <h3>Software Development</h3>
+                <ul>
+                  <li>Bespoke Software Solutions</li>
+                  <li>Mobile App Development</li>
+                  <li>Database Design and Development</li>
+                </ul>
+              </div>
+              <div class="service-category">
+                <h3>Other Services</h3>
+                <ul>
+                  <li>Cloud Services</li>
+                  <li>IT Consulting</li>
+                </ul>
+              </div>
+            </section>
+            </div>
+
+            <div class="chooseus-container">
+            <section id="why-choose-us">
+              <h2>Why Choose Us</h2>
+              <ul>
+                <li>
+                  Over 6 years of experience in Salesforce and software
+                  development
+                </li>
+                <li>Customer satisfaction is our top priority</li>
+                <li>Affordable solutions without compromising quality</li>
+                <li>Innovative IT solutions tailored to your needs</li>
+              </ul>
+            </section>
+          </div>
+
+          <div class="contact-container">
+          <section id="contact" class="contact-section">
+            <h2>Contact Us</h2>
+            <form>
+              <label for="name">Name:</label>
+              <input type="text" id="name" name="name" required />
+
+              <label for="email">Email:</label>
+              <input type="email" id="email" name="email" required />
+
+              <label for="phone">Phone:</label>
+              <input type="tel" id="phone" name="phone" required />
+
+              <label for="service">Service Required:</label>
+              <select id="service" name="service" required>
+                <option value="" disabled selected>Select a service</option>
+                <option value="Salesforce Development">Salesforce Development</option>
+                <option value="Web Development">Web Development</option>
+                <option value="IT Support">IT Support</option>
+                <option value="IT Training">IT Training</option>
+                <option value="Software Development">Software Development</option>
+                <option value="Other Services">Other Services</option>
+              </select>
+
+              <div class="other-services" style="display:none;">
+                <label for="otherService">Specify Other Service:</label>
+                <input type="text" id="otherService" name="otherService" />
+              </div>
+
+              <button type="submit">Submit</button>
+            </form>
+          </section>
+          </div>
+        </div>
+      </header>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.7/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        // Example JavaScript to toggle other services input
+        $('#service').change(function() {
+            if ($(this).val() === 'Other Services') {
+                $('.other-services').show();
+            } else {
+                $('.other-services').hide();
+            }
+        });
+    </script>
+</body>
+</html>
